@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Mukta:wght@400;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;400;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* font-family: 'Lora', serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+* {
+  box-sizing: border-box;
+}
+
+.wrapBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  transform: translateY(150px);
+}
+
+.input {
+  border: 2px solid var(--grayishBlue);
+  border-radius: 5px;
+  display: block;
+  width: 500px;
+  padding: 20px;
+  margin: 20px 0px;
+  outline: none;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.input:focus {
+  border: 2px solid black;
+}
+
+.app {
+  background-image: url("./assets/bg-intro-desktop.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--red);
+  overflow: hidden;
+}
+.error {
+  border: 1px solid red;
+}
+.formPara {
+  display: block;
+  text-align: center;
+  background-color: var(--blue);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.warnPara {
+  color: red;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: -20px;
+  padding-top: 10px;
+  font-style: italic;
+}
+.formWrap {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+}
+
+.btnPara {
+  text-align: center;
+}
+.formArea {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.paraWrap {
+  max-width: 50ch;
+  margin: 20px 30px;
+}
+
+.container {
+  max-with: 800px;
+}
+
+.para {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 30px;
+}
+.subpara {
+  line-height: 25px;
+}
+.btn {
+  border: none;
+  background-color: var(--green);
+  color: white;
+  width: 540px;
+  padding: 20px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.errIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.btn:hover {
+  opacity: 50%;
+}
+
+.btnPara {
+  color: gray;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.span {
+  color: red;
+}
+
+.wrapInputEl {
+  position: relative;
+}
